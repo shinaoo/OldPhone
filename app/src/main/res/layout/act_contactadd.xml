@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_contactadd_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ff000000"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_contactadd_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="返回"
+            android:textColor="@color/cardview_light_background" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_contactadd_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_contactadd_bottombar"
+        android:layout_below="@+id/ll_contactadd_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/ll_contactadd_bottombar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_contactadd_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入联系人号码" />
+
+            <EditText
+                android:id="@+id/et_contactadd_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="输入联系人名字" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_contactadd_add"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="确定" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
